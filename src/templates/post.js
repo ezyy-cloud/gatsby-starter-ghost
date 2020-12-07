@@ -26,9 +26,14 @@ const Post = ({ data, location }) => {
                 <style type="text/css">{`${post.codeinjection_styles}`}</style>
             </Helmet>
             <Layout>
-                <div className="container">
+                 <div className="container">
                     <article className="content">
+                        { post.feature_image ?
+                            <figure className="post-feature-image">
+                                <img src={ post.feature_image } alt={ post.title } />
+                            </figure> : null }
                         <section className="post-full-content">
+                            <h1 className="content-title">{post.title}</h1>
 
                             {/* The main post content */ }
                             <section
