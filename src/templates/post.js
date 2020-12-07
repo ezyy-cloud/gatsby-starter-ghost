@@ -29,7 +29,6 @@ const Post = ({ data, location }) => {
                  <div className="container">
                     <article className="content">
                         <section className="post-full-content">
-                            <h1 className="content-title">{post.title}</h1>
 
                             {/* The main post content */ }
                             <section
