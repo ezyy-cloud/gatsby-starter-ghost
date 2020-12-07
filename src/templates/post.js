@@ -28,7 +28,7 @@ const Post = ({ data, location }) => {
             <Layout>
                 <div className="container">
                     <article className="content">
-                        <section style="padding: 20px">
+                        <section className="post-full-content">
 
                             {/* The main post content */ }
                             <section
